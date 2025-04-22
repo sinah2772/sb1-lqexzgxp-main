@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: '/sb1-lqexzgxp-main/',
+  base: process.env.GITHUB_ACTIONS ? '/sb1-lqexzgxp-main/' : '/',
 });
